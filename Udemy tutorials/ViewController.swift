@@ -3,7 +3,7 @@
 //  Udemy tutorials
 //
 //  Created by Sean Whelan on 09/03/2017.
-//  Copyright © 2017 Sean Whelan. All rights reserved.
+//  Copyright © 2017 Sean Whelan. All rights reserved..
 //
 
 import UIKit
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         
         tapCount = tapCount + 1
-        if tapCount >= 10 {
+        if tapCount >= 20 {
             theLabel.text = "Chill Out Man!"
             tapCount = 0
         } else {
