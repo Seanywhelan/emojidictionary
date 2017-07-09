@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var theLabel: UILabel!
     
     @IBOutlet weak var theLabel2: UILabel!
@@ -28,9 +28,17 @@ class ViewController: UIViewController {
         
         print(text1.text!)
         print(text2.text!)
-        theLabel2.text = String(Int(text1.text!)! + Int(text2.text!)!)
+        let addition = false
         
-    
+        
+        if addition {
+            theLabel2.text = String(Int(text1.text!)! + Int(text2.text!)!)
+        } else {
+            theLabel2.text = String(Int(text1.text!)! - Int(text2.text!)!)
+            
+            
+        }
+        
     }
     
     @IBAction func button4Tapped(_ sender: Any) {
@@ -48,7 +56,7 @@ class ViewController: UIViewController {
             theLabel.text = "Chill Out Man!"
             tapCount = 0
         } else {
-          theLabel.text = String(tapCount)
+            theLabel.text = String(tapCount)
         }
         print(tapCount)
         // theLabel.text = "Hello There"
@@ -66,12 +74,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
